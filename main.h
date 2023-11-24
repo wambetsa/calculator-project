@@ -6,13 +6,16 @@
 #include <stdlib.h>
 
 /*my prototypes*/
-/*arithmetic operations*/
+
+/*arithmetic operations start here*/
 float add(float a, float b);
 float sub(float a, float b);
 float mult(float a, float b);
 float divi(float a, float b);
 float mod(int a, int b);
-/*unit conversion*/
+/*arithmetic operations end here*/
+
+/*unit conversion starts here*/
 /*==========length===========*/
 float cm_to_m(float distance);
 float m_to_cm(float distance);
@@ -32,9 +35,34 @@ float ltr_to_mcub(float vol);
 float mcub_to_ltr(float vol);
 float ltr_to_fcub(float vol);
 float fcub_to_ltr(float vol);
+/*============MASS===========*/
+float g_to_kg(float m);
+float kg_to_g(float m);
+float kg_to_t(float m);
+float t_to_kg(float m);
+float g_to_t(float m);
+float t_to_g(float m);
+/*============SPEED==========*/
+float ms_to_kmhr(float s);
+float kmhr_to_ms(float s);
+float kmhr_to_mileshr(float s);
+float mileshr_to_kmhr(float s);
+float ms_to_mileshr(float s);
+float mileshr_to_ms(float s);
+/*===========TIME============*/
+float hr_to_min(float t);
+float min_to_hr(float t);
+float hr_to_sec(float t);
+float sec_to_hr(float t);
+float min_to_sec(float t);
+float sec_to_min(float t);
+/*unit conversion ends here*/
 
-/*bit manipulation*/
 
-/*others*/
+/*bit manipulation starts here*/
+/*bit manipulation ends here*/
+
+/*others start here*/
+/*others end here*/
 
 #endif

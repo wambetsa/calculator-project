@@ -167,22 +167,172 @@ float fcub_to_ltr(float vol)
     return result;
 }
 
+
 /*============================*/
 /*=============MASS===========*/
 /*g to kg*/
+float g_to_kg(float m)
+{
+    float result;
 
+    result = m / 1000;
+    return result;
+}
 
 /*kg to g*/
+float kg_to_g(float m)
+{
+    float result;
 
+    result = m * 1000;
+    return result;
+}
 
 /*kg to t*/
+float kg_to_t(float m)
+{
+    float result;
 
+    result = m / 1000;
+    return result;
+}
 
 /*t to kg*/
+float t_to_kg(float m)
+{
+    float result;
 
+    result = m * 1000;
+    return result;
+}
 
 /*g to t*/
+float g_to_t(float m)
+{
+    float result;
 
+    result = m / 1000000;
+    return result;
+}
 
 /*t to g*/
+float t_to_g(float m)
+{
+    float result;
 
+    result = m * 1000000;
+    return result;
+}
+
+/*=============================*/
+/*============SPEED============*/
+/*m/s to km/hr*/
+float ms_to_kmhr(float s)
+{
+    float result;
+
+    result = s * 3.6;
+    return result;
+}
+
+/*km/hr to m/s*/
+float kmhr_to_ms(float s)
+{
+    float result;
+
+    result = s / 3.6;
+    return result;
+}
+
+/*km/hr to miles/hr*/
+float kmhr_to_mileshr(float s)
+{
+    float result;
+
+    result = s / 1.609;
+    return result;
+}
+
+/*miles/hr to km/hr*/
+float mileshr_to_kmhr(float s)
+{
+    float result;
+
+    result = s * 1.60934;
+    return result;
+}
+
+/*m/s to miles/hr*/
+float ms_to_mileshr(float s)
+{
+    float result;
+
+    result = s * 2.237;
+    return result;
+}
+
+/*miles/hr to m/s*/
+float mileshr_to_ms(float s)
+{
+    float result;
+
+    result = s / 2.237;
+    return result;
+}
+
+
+/*============================*/
+/*============TIME============*/
+/*hrs to min*/
+float hr_to_min(float t)
+{
+    float result;
+
+    result = (t * ((float) 60));
+    return result;
+}
+
+/*min to hrs*/
+float min_to_hr(float t)
+{
+    float result;
+
+    result = t / (float)60;
+    return result;
+}
+
+/*hrs to sec*/
+float hr_to_sec(float t)
+{
+    float result;
+
+    result = (t * ((float) 3600));
+    return result;
+}
+
+/*sec to hrs*/
+float sec_to_hr(float t)
+{
+    float result;
+
+    result = (t / ((float) 3600));
+    return result;
+}
+
+/*min to sec*/
+float min_to_sec(float t)
+{
+    float result;
+
+    result = (t * ((float)60));
+    return result;
+}
+
+/*sec to min*/
+float sec_to_min(float t)
+{
+    float result;
+
+    result = (t / ((float)60));
+    return result;
+}

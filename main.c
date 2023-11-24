@@ -16,7 +16,8 @@ int main()
 
         switch(entry)
         {
-            /*Arithmetic Operations*/
+            /*================================*/
+            /*Arithmetic Operations start here*/
             case 1:
                 printf("Enter Num1 : ");
                 scanf("%f", &i);
@@ -38,13 +39,19 @@ int main()
                 printf("Division : %f\n", res_div);
                 printf("Modulo : %f\n", res_mod);
                 break;
-            
-            /*bit manipulation*/
+            /*Arithmetic Operations end here*/
+            /*==============================*/
+
+            /*============================*/
+            /*bit manipulation starts here*/
             case 2:
                 printf("Bit Manipulation\n");
                 break;
+            /*bit manipulation ends here*/
+            /*==========================*/
             
-            /*Unit Conversion*/
+            /*===========================*/
+            /*Unit Conversion starts here*/
             case 3:
                 printf("Unit Conversion\n");
                 /*while true loop*/
@@ -120,11 +127,74 @@ int main()
                         printf("%f foot cub = %f ltr\n", ltf, ftl);
                     }
                     else if (units == 4)
-                    {}
+                    {
+                        float user_mass;
+
+                        printf("\nEnter Mass in grams : \n");
+                        scanf("%f", &user_mass);
+
+                        float gtkg, kgtg, kgtt, ttkg, gtt, ttg;
+                        
+                        gtkg = g_to_kg(user_mass);
+                        kgtg = kg_to_g(gtkg);
+                        kgtt = kg_to_t(gtkg);
+                        ttkg = t_to_kg(kgtt);
+                        gtt = g_to_t(kgtg);
+                        ttg = t_to_g(gtt);
+
+                        printf("%f g = %f kg\n", user_mass, gtkg);
+                        printf("%f kg = %f g\n", gtkg, kgtg);
+                        printf("%f kg = %f t\n", gtkg, kgtt);
+                        printf("%f t = %f kg\n", kgtt, ttkg);
+                        printf("%f g = %f t\n", kgtg, gtt);
+                        printf("%f t = %f g\n", gtt, ttg);
+                    }
                     else if (units == 5)
-                    {}
+                    {
+                        float user_speed;
+
+                        printf("\nEnter speed in m/s : \n");
+                        scanf("%f", &user_speed);
+
+                        float mstkmhr, kmhrtms, kmhrtmileshr, mileshrtkmhr, mstmileshr, mileshrtms;
+                        
+                        mstkmhr = ms_to_kmhr(user_speed);
+                        kmhrtms = kmhr_to_ms(mstkmhr);
+                        kmhrtmileshr = km_to_miles(mstkmhr);
+                        mileshrtkmhr = mileshr_to_kmhr(kmhrtmileshr);
+                        mstmileshr = ms_to_mileshr(kmhrtms);
+                        mileshrtms = mileshr_to_ms(kmhrtmileshr);
+
+                        printf("%f m/s = %f km/hr\n", user_speed, mstkmhr);
+                        printf("%f km/hr = %f m/s\n", mstkmhr, kmhrtms);
+                        printf("%f km/hr = %f miles/hr\n", mstkmhr, kmhrtmileshr);
+                        printf("%f miles/hr = %f km/hr\n", kmhrtmileshr, mileshrtkmhr);
+                        printf("%f m/s = %f miles/hr\n", kmhrtms, mstmileshr);
+                        printf("%f miles/hr = %f m/s\n", mstmileshr, mileshrtms);
+                    }
                     else if (units == 6)
-                    {}
+                    {
+                        float user_time;
+
+                        printf("\nEnter time in seconds : \n");
+                        scanf("%f", &user_time);
+
+                        float sectmin, mintsec, minthr, hrtmin, secthr, hrtsec;
+
+                        sectmin = sec_to_min(user_time);
+                        mintsec = min_to_sec(sectmin);
+                        minthr = min_to_hr(sectmin);
+                        hrtmin = hr_to_min(minthr);
+                        secthr = sec_to_hr(mintsec);
+                        hrtsec = hr_to_sec(secthr);
+
+                        printf("%f sec = %f min\n", user_time, sectmin);
+                        printf("%f min = %f sec\n", sectmin, mintsec);
+                        printf("%f min = %f hr\n", sectmin, minthr);
+                        printf("%f hr = %f min\n", minthr, hrtmin);
+                        printf("%f sec = %f hr\n", mintsec, secthr);
+                        printf("%f hr = %f sec\n", secthr, hrtsec);
+                    }
                     else if (units == 0)
                     {
                         printf("Quiting...\n");
@@ -137,21 +207,35 @@ int main()
                     }
                 }
                     break;
-            
-            /*Others such as squares and roots*/
-            case 4:
-                printf("Others eg square and roots\n");
-                break;
+            /*Unit conversion ends here*/
+            /*=========================*/
 
+            /*=================================================*/
+            /*Others such as squares, roots and even start here*/
+            case 4:
+                printf("Others eg squares, roots, odd, even, factorial\n");
+                break;
+            
+
+            /*other such as squares, roots, even end here*/
+            /*===========================================*/
+
+            /*================*/
+            /*exit starts here*/
             case 0:
                 printf("Exiting...\n");
                 exit(EXIT_SUCCESS);
                 break;
-            
-            /*default: selection out of entry*/
+            /*exit ends here*/
+            /*==============*/
+
+            /*===========================================*/
+            /*default: selection out of entry starts here*/
             default:
                 printf("Invalid Selection\n");
                 printf("Enter a number between 1 and 4 or 0 to quit\n");
+            /*default: selection out of entry ends here*/
+            /*=========================================*/
         }
     }
     return 0;
