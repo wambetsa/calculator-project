@@ -4,6 +4,7 @@
 /*include libraries*/
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 /*my prototypes*/
 
@@ -63,6 +64,13 @@ float sec_to_min(float t);
 /*bit manipulation ends here*/
 
 /*others start here*/
+float square(float s);
+float squareroot(float sr);
+float cube(float c);
+float cuberoot(float cr);
+int sum_of_even(int e);
+int sum_of_odd(int o);
+int factorial_of_num(int f);
 /*others end here*/
 
 #endif

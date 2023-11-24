@@ -4,6 +4,7 @@
 int main()
 {
     int entry;
+    int counter = 0; /*exits default when user defaults 4 times*/
 
     float i, j, res_add, res_sub, res_div, res_mult, res_mod;
 
@@ -206,7 +207,7 @@ int main()
                         printf("Please select a number between 1 and 6 or 0\n");
                     }
                 }
-                    break;
+                break;
             /*Unit conversion ends here*/
             /*=========================*/
 
@@ -214,11 +215,98 @@ int main()
             /*Others such as squares, roots and even start here*/
             case 4:
                 printf("Others eg squares, roots, odd, even, factorial\n");
-                break;
-            
+                while (1)
+                {
+                    int others;
+
+                    printf("Select category\n 1 : Square\n 2 : Squareroot\n 3 : Cube\n 4 : Cuberoot\n 5 : Even\n 6 : Odd\n 7 : Factorial\n 0 : Exit/Quit\n");
+                    scanf("%d", &others);
+                    if (others == 1)
+                    {
+                        float user_sq, result;
+
+                        printf("Enter number to square : ");
+                        scanf("%f", &user_sq);
+
+                        result = square(user_sq);
+                        printf("Square of %f is %f\n", user_sq, result);
+                    }
+                    else if (others == 2)
+                    {
+                        float user_sr, result;
+
+                        printf("Enter the number to find squareroot : ");
+                        scanf("%f", &user_sr);
+
+                        result = squareroot(user_sr);
+                        printf("Squareroot of %f is %f\n", user_sr, result);
+                    }
+                    else if (others == 3)
+                    {
+                        float user_cb, result;
+
+                        printf("Enter number to cube : ");
+                        scanf("%f", &user_cb);
+                        
+                        result = cube(user_cb);
+                        printf("Cube of %f is %f\n", user_cb, result);
+                    }
+                    else if (others == 4)
+                    {
+                        float user_cr, result;
+
+                        printf("Enter number to find cuberoot : ");
+                        scanf("%f", &user_cr);
+
+                        result = cuberoot(user_cr);
+                        printf("Cuberoot of %f is %f\n", user_cr, result);
+                    }
+                    else if (others == 5)
+                    {
+                        int res, user_num_range;
+
+                        printf("Enter number n : ");
+                        scanf("%d", &user_num_range);
+
+                        res = sum_of_even(user_num_range);
+                        printf("\nSum of even numbers between 0 and %d is : %d\n", user_num_range, res);
+                    }
+                    else if (others == 6)
+                    {
+                        int user_nm, res;
+
+                        printf("Enter number : ");
+                        scanf("%d", &user_nm);
+
+                        res = sum_of_odd(user_nm);
+                        printf("\nSum of odd numbers btn 0 and %d is : %d\n", user_nm, res);
+                    }
+                    else if (others == 7)
+                    {
+                        int fact, user_num;
+
+                        printf("Enter number eg 5 : ");
+                        scanf("%d", &user_num);
+
+                        fact = factorial_of_num(user_num);
+                        printf("Factorial of %d is : %d \n", user_num, fact);
+                    }
+                    else if (others == 0)
+                    {
+                        printf("Quiting....\n");
+                        break;
+                    }
+                    else
+                    {
+                        printf("Invalid CHoice\n");
+                        printf("Please select a number between 1 and 6 or 0 to Exit\n");
+                    }
+                }
+                break;        
 
             /*other such as squares, roots, even end here*/
             /*===========================================*/
+
 
             /*================*/
             /*exit starts here*/
@@ -229,11 +317,22 @@ int main()
             /*exit ends here*/
             /*==============*/
 
+
             /*===========================================*/
             /*default: selection out of entry starts here*/
             default:
+                counter++;
+
                 printf("Invalid Selection\n");
                 printf("Enter a number between 1 and 4 or 0 to quit\n");
+
+                /*Quit when user makes "Invalid Selection" more than thrice*/
+                if (counter == 4)
+                {
+                    printf("\nYou have made Invalid selection more than 3 times\n");
+                    printf(":::::Try again later!:::::\n:::::Quiting...::::::\n\n");
+                    exit(EXIT_SUCCESS);
+                }
             /*default: selection out of entry ends here*/
             /*=========================================*/
         }
