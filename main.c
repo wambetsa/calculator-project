@@ -5,6 +5,7 @@ int main()
 {
     int entry;
     int counter = 0; /*exits default when user defaults 4 times*/
+    int units_counter  = 0; /*exit units conversion when user enter invalid number more than 3 times*/
 
     float i, j, res_add, res_sub, res_div, res_mult, res_mod;
 
@@ -60,7 +61,7 @@ int main()
                     printf("\nChoose the unit to convert\n");
                     int units;
                 
-                    printf(" 1 : Length\n 2 : Temperature\n 3 : Volume\n 4 : Mass\n 5 : Speed\n 6 : Time\n 0 : Enter 0 to quit\n");
+                    printf(" 1 : Length\n 2 : Temperature\n 3 : Volume\n 4 : Mass\n 5 : Speed\n 6 : Time\n 0 : Enter 0 to quit\n   # ");
                     scanf("%d", &units);
 
                     if (units == 1)
@@ -203,8 +204,17 @@ int main()
                     }
                     else
                     {
+                        units_counter++;
+
                         printf("Invalid choice!\n");
                         printf("Please select a number between 1 and 6 or 0\n");
+
+                        if (units_counter > 4)
+                        {
+                            printf("You have made Invalid choices more than 3 times.\n");
+                            printf("Try Again Later!\n");
+                            break;
+                        }
                     }
                 }
                 break;
@@ -219,7 +229,7 @@ int main()
                 {
                     int others;
 
-                    printf("Select category\n 1 : Square\n 2 : Squareroot\n 3 : Cube\n 4 : Cuberoot\n 5 : Even\n 6 : Odd\n 7 : Factorial\n 0 : Exit/Quit\n");
+                    printf("Select category\n 1 : Square\n 2 : Squareroot\n 3 : Cube\n 4 : Cuberoot\n 5 : Add Even nums from 0 to x\n 6 : Add Odd nums from 0 to x\n 7 : Factorial\n 0 : Exit/Quit\n   # ");
                     scanf("%d", &others);
                     if (others == 1)
                     {
