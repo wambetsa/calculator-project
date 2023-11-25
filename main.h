@@ -61,6 +61,7 @@ float sec_to_min(float t);
 
 
 /*bit manipulation starts here*/
+void dec_to_bin(int d);
 /*bit manipulation ends here*/
 
 /*others start here*/

@@ -7,6 +7,7 @@ int main()
     int counter = 0; /*exits default when user defaults 4 times*/
     int units_counter  = 0; /*exit units conversion when user enter invalid number more than 3 times*/
     int others_counter = 0; /*exit For Others section when user makes or enters invalid number more than 3 times*/
+    int bit_counter = 0; /*exit bit manipulation when the user makes invalid selection more than 3 times*/
 
     float i, j, res_add, res_sub, res_div, res_mult, res_mod;
 
@@ -49,6 +50,53 @@ int main()
             /*bit manipulation starts here*/
             case 2:
                 printf("Bit Manipulation\n");
+                while(1)
+                {
+                    int user_selection;
+
+                    printf("Select\n 1 : Decimal to Binary\n 2 : Binary to Decimal\n 3 : $$$$$$$\n 0 : Quit/Exit\n   : ");
+                    scanf("%d", &user_selection);
+                    /**/
+                    if (user_selection == 1)
+                    {
+                        int bin_entry, result;
+
+                        printf("\nEnter decimal number eg 9 : ");
+                        scanf("%d", &bin_entry);
+
+                        //result = dec_to_bin(bin_entry);
+                        printf("\n%d = ", bin_entry);
+                        dec_to_bin(bin_entry);
+                    }
+                    else if (user_selection == 2)
+                    {
+                        printf("Binary to decimal not yet completed\n");
+                    }
+                    else if (user_selection == 3)
+                    {
+                        printf("Not yet done. Under development\n");
+                    }
+                    else if (user_selection == 0)
+                    {
+                        printf("Exiting...\n");
+                        break;
+                    }
+                    else
+                    {
+                        /*increment counter or count number of times a user makes invalid selection*/
+                        bit_counter++;
+
+                        printf("Invalid Selection!\n");
+                        printf("You need to select or enter 1,2,3, or 0\n");
+                        /*exit when the count of invalidselection reaches 4*/
+                        if (bit_counter >= 4)
+                        {
+                            printf("You have entered Invalid Selection more than 3 times\n");
+                            printf("Exiting/Quiting...\n");
+                            break;
+                        }
+                    }
+                }
                 break;
             /*bit manipulation ends here*/
             /*==========================*/

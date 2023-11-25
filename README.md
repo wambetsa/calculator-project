@@ -33,11 +33,13 @@ speed - km/hr m/s
 time - hrs, min, sec
 
 # others
-square
-squareroot
 cube
+square
 cuberoot
+squareroot
+factorial of a number
+sum odd nums btn 0 and x
+sum even nums btn 0 and x
 
-
-# case statement capture user input and redirect to modules
+### case statement capture user input and redirect to modules
 switch stt
