@@ -6,6 +6,7 @@ int main()
     int entry;
     int counter = 0; /*exits default when user defaults 4 times*/
     int units_counter  = 0; /*exit units conversion when user enter invalid number more than 3 times*/
+    int others_counter = 0; /*exit For Others section when user makes or enters invalid number more than 3 times*/
 
     float i, j, res_add, res_sub, res_div, res_mult, res_mod;
 
@@ -308,8 +309,19 @@ int main()
                     }
                     else
                     {
-                        printf("Invalid CHoice\n");
-                        printf("Please select a number between 1 and 6 or 0 to Exit\n");
+                        /*increment others_counter to count number of invalid selections made*/
+                        others_counter++;
+
+                        printf("Invalid Choice!\n");
+                        printf("Please select a number between 1 and 6 or 0 to Exit.\n");
+
+                        /*quit "For Others" sub-menu once a user makes invalid choice more than thrice*/
+                        if (others_counter > 3)
+                        {
+                            printf("You have made Invalid Choices more than 3 times\n");
+                            printf("Quiting/Exiting...\n");
+                            break;
+                        }
                     }
                 }
                 break;        
