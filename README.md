@@ -19,7 +19,7 @@
 
 ### structure of the program
 while loop  
-&nbsp switch stt  
+    switch stt  
         case 1:  
             logic  
             break;  
