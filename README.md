@@ -18,39 +18,39 @@
 ###### _cube, square, cuberoot, squareroot, factorial of a number, sum odd nums btn 0 and x, sum even nums btn 0 and x_
 
 ### structure of the program
-while loop
-    switch stt
-        case 1:
-            logic
-            break;
-        case 2:
-            while loop
-                if stt
-                else if stt
-                else if stt
-                else
-            break;
-        case 3:
-            while loop
-                if stt
-                else if stt
-                else if stt
-                else if stt
-                else if stt
-                else
-            break;
-        case 4:
-            break;
-                if stt
-                else if stt
-                else if stt
-                else if stt
-                else
-            while loop
-        case 0:
-            logic
-            break;
-        default:
+while loop  
+    switch stt  
+        case 1:  
+            logic  
+            break;  
+        case 2:  
+            while loop  
+                if stt  
+                else if stt  
+                else if stt  
+                else  
+            break;  
+        case 3:  
+            while loop  
+                if stt  
+                else if stt  
+                else if stt  
+                else if stt  
+                else if stt  
+                else  
+            break;  
+        case 4:  
+            break;  
+                if stt  
+                else if stt  
+                else if stt  
+                else if stt  
+                else  
+            while loop  
+        case 0:  
+            logic  
+            break;  
+        default:  
 
 ### Challenges faced when coding
 ###### *At first, I had challenges of determining the best way to create  _infinite while loops_ and exit the loop*
