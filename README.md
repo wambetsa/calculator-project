@@ -3,43 +3,19 @@
 ###### *developer @dev-wambetsa*
 
 ### Modules
-standard Operations
-bit manipulation
-unit conversion
-others
+*standard Operations, bit manipulation, unit conversion, others*
 
 ### standard operations
-division
-mltiplication
-addition
-subtraction
-modulus
+*division, mltiplication, addition, subtraction, modulus*
 
 ### bit manipulation
-binary
-decimal
-hexadecimal
-octal
-shift - left right
-bitwise operation - and or, not, nand, nor, xor
+*binary, decimal, hexadecimal, octal, shift - left right, bitwise operation - and or, not, nand, nor, xor*
 
 ### units conversion
-currency
-length - cm, m, km, miles
-volume - cm, m
-temperature degrees, FH
-mass - g, kg
-speed - km/hr m/s
-time - hrs, min, sec
+*length - cm, m, km, miles. volume - cm, m. temperature degrees, FH. mass - g, kg. speed - km/hr m/s. time - hrs, min, sec*
 
 ### others
-cube
-square
-cuberoot
-squareroot
-factorial of a number
-sum odd nums btn 0 and x
-sum even nums btn 0 and x
+_cube, square, cuberoot, squareroot, factorial of a number, sum odd nums btn 0 and x, sum even nums btn 0 and x_
 
 ### structure of the program
 while loop
@@ -77,14 +53,14 @@ while loop
         default:
 
 ### Challenges faced when coding
-At first, I had challenges of determining the best way to create  _infinite while loops_ and exit the loop
-I also find it hard to understand sequence of processes eg _converting decimal number to binary_
+*At first, I had challenges of determining the best way to create  _infinite while loops_ and exit the loop*
+*I also find it hard to understand sequence of processes* eg _converting decimal number to binary_
 
 ### How to Run the code
-- Clone the repository
-- Ensure gcc is enabled
-- Compile the code using __gcc *.c -o calc__
-- Run the executable file using __./calc__
+- *Clone the repository*
+- *Ensure gcc is enabled*
+- *Compile the code using* __gcc *.c -o calc__
+- *Run the executable file using* __./calc__
 
 ### RECOMMEND ANY CHANGES AND MODIFICATIONS
 - __jewstechs\@gmail.com__
