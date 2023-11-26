@@ -62,6 +62,9 @@ while loop
 ###### - *Compile the code using* __gcc *.c -o calc__
 ###### - *Run the executable file using* __./calc__
 
+### Output of the program
+![Output of the program](image.png)
+
 ### RECOMMEND ANY CHANGES AND MODIFICATIONS
 - __jewstechs\@gmail.com__
 
