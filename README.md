@@ -2,20 +2,20 @@
 ## calculator-project
 ###### *developer @dev-wambetsa*
 
-### _Modules_
+### Modules
 standard Operations
 bit manipulation
 unit conversion
 others
 
-### *standard operations*
+### standard operations
 division
 mltiplication
 addition
 subtraction
 modulus
 
-### *bit manipulation*
+### bit manipulation
 binary
 decimal
 hexadecimal
@@ -23,7 +23,7 @@ octal
 shift - left right
 bitwise operation - and or, not, nand, nor, xor
 
-### *units conversion*
+### units conversion
 currency
 length - cm, m, km, miles
 volume - cm, m
@@ -32,7 +32,7 @@ mass - g, kg
 speed - km/hr m/s
 time - hrs, min, sec
 
-### *others*
+### others
 cube
 square
 cuberoot
@@ -41,7 +41,7 @@ factorial of a number
 sum odd nums btn 0 and x
 sum even nums btn 0 and x
 
-### _structure of the program_
+### structure of the program
 while loop
     switch stt
         case 1:
@@ -76,17 +76,17 @@ while loop
             break;
         default:
 
-### _Challenges faced when coding_
+### Challenges faced when coding
 At first, I had challenges of determining the best way to create  _infinite while loops_ and exit the loop
 I also find it hard to understand sequence of processes eg _converting decimal number to binary_
 
-### *How to Run the code*
+### How to Run the code
 - Clone the repository
 - Ensure gcc is enabled
 - Compile the code using __gcc *.c -o calc__
 - Run the executable file using __./calc__
 
-### _RECOMMEND ANY CHANGES AND MODIFICATIONS_
-- __jewstechs#gmail.com__
+### RECOMMEND ANY CHANGES AND MODIFICATIONS
+- __jewstechs\@gmail.com__
 
 ### Thank you for your time
